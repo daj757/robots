@@ -39,7 +39,6 @@ class App extends React.Component {
     const {robots} = this.state
     const {searchField, onSearchChange} = this.props
     const filteredRobots = robots.filter(robot => {
-      console.log(searchField)
        return robot.name.toLowerCase().includes(searchField.toLowerCase())
     }) 
     return  !robots.length ? <h1 className="tc">Loading</h1> : (
